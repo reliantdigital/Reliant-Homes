@@ -1,0 +1,12 @@
+body {
+    margin:0px;
+    padding:0px;
+    display:flex;
+    box-sizing: border-box;
+}
+.footer { margin-bottom: 0; }
+.footer { --fs-5: 1rem; }
+
+  .footer-link-box { flex-basis: 700px; }
+
+}
