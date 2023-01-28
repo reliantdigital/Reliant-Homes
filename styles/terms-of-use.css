@@ -1,0 +1,39 @@
+body {
+    margin:0px;
+    padding:0px;
+    display:flex;
+    background-color: blue
+}
+html {
+  font-family: var(--ff-nunito-sans);
+  scroll-behavior: smooth;
+}
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--cultured-1);
+  margin-bottom: 25px;
+}
+
+.navbar-top .logo img { width: 200px; }
+
+
+.navbar .logo{
+  width: 40px;
+  height: 30px;
+}
+.terms{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1{
+  padding-left: 5rem;;
+}
+
+.main{
+  margin-left: 8px;
+  margin-right: 8px;
+}

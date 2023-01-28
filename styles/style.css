@@ -2,11 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
 
 
 
@@ -120,6 +115,7 @@ html {
 body {
   background: var(--white);
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -136,11 +132,10 @@ body {
 
 
 
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+
 
 .container { padding-inline: 15px; }
 
@@ -297,7 +292,7 @@ button, a { transition: var(--transition); }
 
 .header-top-link {
   color: var(--white);
-  font-size: var(--fs-6);
+  font-size: var(--fs-8);
   font-weight: var(--fw-700);
   display: flex;
   justify-content: center;
@@ -325,7 +320,7 @@ button, a { transition: var(--transition); }
 
 .header-top-social-link {
   color: var(--white);
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .header-top-btn {
