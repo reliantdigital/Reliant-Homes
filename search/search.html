@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8"> 
+    <meta charset="utf-8"> 
    <meta name="application-name" content="reliantdigitals.xyz">
    <meta name="google" content="nopagereadaloud">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,61 +9,43 @@
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <title>Search - reliantdigitals.xyz</title>
    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles/search.css">
+  <link rel="stylesheet" href="styles/search.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   
- <!-- Font Awesome -->
+  <link rel="stylesheet" href="style.css"> 
+  <!-- Font Awesome -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   rel="stylesheet"
 />
-       <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
- 
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
 <!-- MDB -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
   rel="stylesheet"
 />   
  
-    <style type="text/css">
-        body {
-             padding: 0px;
-             margin:0px;
-             box-sizing: border-box;
-}
-.container .logo img{
-     padding-top:10px;
-     padding-bottom:20px;
-     width:271px;
-     height:40px;
-     display: flex;
-}
-
-@media screen and (min-width: 768px) {
-    #adv-search {
-        width: 500px;
-        margin: 0 auto;
-    }
-    
-    </style>
-  
     
 </head>
-
- <body>
+<body>
     
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <!-- Container wrapper -->
   <div class="container">
     <!-- Navbar brand -->
-<a href="https://reliantdigitals.xyz" class="logo">
-      <img src="./brand/reliant.png" alt="Reliant logo">
-        </a>  
-   
+    <a class="navbar-brand me-2" href="https://reliantdigitals.xyz/">
+  <img src="images/logo.png"
+        height="30px"
+        alt="Reliant Logo"
+        loading="lazy"
+        style="margin-top: -1px;"/>
+    </a>
 
     <!-- Toggle button -->
     <button
@@ -108,34 +90,99 @@
 </nav>
 <!-- Navbar -->
 
-  <form>
-    <div class="rcontainer" style="border: 1px solid #D3D3D3; border-radius: 7px; padding: 30px; margin:10px 13px;"/>
+  
+    <div class="rcontainer">
         
+ <form>
      <h4>Search Available Homes</h4>
      
- <div class="adv-search">
-    <input type="text" id="search"  class="form-control" placeholder="Enter City, State or Zip" 
-         style=" padding:10px;"/>
-       
-  <br>
- <button id="search" class="searchbtn"
-             style=" padding:10px;
-                     width: 100%;
-                     border:none;
-                     color:#fff;
-                     background-color:#FA5B3D;
-                     border-radius:7px;">
-  Search </button>									  
-									  
+ <div class="search" id="adv-search" style="margin-top:7px">
+    <input type="text" class="form-control" placeholder="Enter City, State or Zip" 
+         /><br>
 <div class="container">
 
+<button id="search" class="searchbtn">
+  Search </button>	
+                          </form>
+                            </div>
+                        </div> 
+                </div>
+            </div>
+          </div>
         </div>
 	</div>
 </div>
 </div>
 
+<!-- main -->
+<div class="main-container">
+    <div class="image-section">
+   <img src="images/property2.jpg">
+   <div class="main-container-content">      
+ <h1 class="h1">
+<i class="fa-solid fa-house-chimney-user">
+</i>   Renters </h1>
+  <div class="searching">
+ <span>Searching for an Apartment or House to Rent?</span>
+  </div>
+ <div class="sub-title">
+<p><i class="fa-solid fa-circle-check"></i>  Search Apartments and Houses for rent 
+all in one place - FREE!!</p>
+<p><i class="fa-solid fa-circle-check">
+  </i>View detailed info on the Apartments and rentals including pictures!</p>     
+<p><i class="fa-solid fa-circle-check">
+</i>View  floor plans of the apartments and houses for rent!</p>
+<p><i class="fa-solid fa-circle-check">
+</i>New Apartments and Houses for rent posted daily.</p>
+<p><i class="fa-solid fa-circle-check">
+</i>See the location of the rentals on a map.</p>
+<p><i class="fa-solid fa-circle-check">
+</i>Send messages or questions to the property manager of rentals that interest you.</p>
+</div>
+   </div>  
+</div>
+</div>
+</div>
 
-
+<div class="landlord-container">
+    <div class="image-section">
+   <img src="images/images.png">
+   <div class="landlord-container-content">
+   <h1 class="h1">Landlord</h1>
+   
+   <div class="landlord-vacant">
+   <span>Looking for where to list your vacant properties?</span></div>
+   </div>
+   <div class="sub-title">
+ <p><i class="fa-solid fa-circle-check">
+</i>List apartments and houses for rent with pictures - FREE!!</p>
+<p><i class="fa-solid fa-circle-check">
+</i>Automatically have your apartment or rental posted within a minute for FREE!!</p>     
+<p><i class="fa-solid fa-circle-check">
+</i>View statistics on how often your rental has been viewed by prospective tenants.</p>
+<p><i class="fa-solid fa-circle-check">
+</i>See the location of the rentals on a map.</p>
+</div>
+<div class="get-started">
+ <a href=""> Get started now ...
+ </a>
+           </div>
+         </div>  
+      </div>
+  </div>
+  
+  <!-- Footer Section -->
+  <footer>
+      <div class="footer-container">
+      
+        <p class="copyright">
+          &copy; 2023. Reliant Homes. All Rights Reserved
+        </p>
+          
+      
+      </div>
+    </div>
+  </footer>
   <script src="http://code.jquery.com/jquery-1.11.1.min.js">
       
   </script>
