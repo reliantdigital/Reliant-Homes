@@ -16,6 +16,15 @@ body{
     background-color: #f1f2f3;
 }
 
+.navbar{
+     display:flex;
+     width:100%;
+}
+
+.navbar . navbar-brand{
+      height=30px;
+      margin-top: -1px;
+}
 .container{
     position: relative;
     max-width: 430px;
