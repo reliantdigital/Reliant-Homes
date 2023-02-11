@@ -20,10 +20,13 @@ body{
      display:flex;
      width:100%;
      max-width: 430px;
-     height=30px;
+     height: 30px;
+     background-color: #D3D3D3;
+     
+     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.navbar .navbar-brand{
+.navbar .brand-container{
       padding-left: 15px;     
       margin-top: -1px;
 }
