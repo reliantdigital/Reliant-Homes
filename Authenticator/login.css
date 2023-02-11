@@ -19,17 +19,17 @@ body{
 .navbar{
      display:flex;
      width:100%;
-     max-width: 430px;
-     height: 30px;
+     height: 40px;
      background-color: #D3D3D3;
      
      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.navbar .brand-container img{
+.brand-container img{
       padding-left: 15px;     
-      margin-top: -1px;
+      margin-top: 1px;
 }
+
 .container{
     position: relative;
     max-width: 430px;
