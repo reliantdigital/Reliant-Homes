@@ -33,9 +33,9 @@ input.addEventListener("keypress", function(event) {
   }
 });
 	function display(form) {
-		if (form.username.value == "root") {
+		if (form.email.value == "root") {
 			if (form.password.value == "root") {
-				location = "dashboard.html"
+				location = "public/dashboard.html"
 			} else {
 				alert("Invalid Password")
 			}
@@ -55,7 +55,7 @@ input.addEventListener("keypress", function(event) {
 
                 <form action="#" method="POST">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input id="email" type="email" placeholder="Enter your email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
@@ -85,14 +85,17 @@ input.addEventListener("keypress", function(event) {
                 </div>
             </div>
 
-            <!-- Registration Form -->
-            <div class="form signup">
-                <span class="title">Registration</span>
 
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your name" required>
-                        <i class="uil uil-user"></i>
+
+                 <!-- Registration Form -->
+
+       <div class="form signup">
+           <span class="title">Registration</span>
+
+             <form action="#">
+                  <div class="input-field">
+                      <input type="text" placeholder="Enter your name" required>
+                       <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
                         <input type="text" placeholder="Enter your email" required>
