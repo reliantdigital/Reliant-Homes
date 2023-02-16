@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    
+    <script src="https://kit.fontawesome.com/54d31368fb.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <style type="text/css">
+       *, *::before, *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: poppins, sans serif;
+}
+   body{
+      width: 100%;
+       margin: 0;
+       padding: 0;
+       display: block; 
+       background:#ececec;
+       
+   }     
+   
+        
+ .header_top{
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-bottom: 22px;
+     
+ }
+ 
+ .header_top h1{
+     padding-top:20px;
+     padding-left: 20px;
+ }
+ 
+ .header_top p{
+    font-size: 14px;
+    padding-left: 15px;
+    margin-left:10px;
+ }
+ 
+ .container{
+     
+     margin-left:10px;
+     margin-right:10px;
+     background: white;   
+     border: 1px solid #ccc;
+     height: 100%;
+     display: flex;
+     border-radius: 10px;
+     align-items: center;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   {
+    margin: 50%;
+    
+  }
+}
+ .form_group{
+     width:100%;
+     margin-bottom: 30px;
+     margin-top:50px;
+     margin-left: 10px;
+     margin-right:10px;
+     padding: 15px;
+ }   
+    
+  .form_group input{
+      width:100%;
+      height: 40px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding-left:10px;
+      margin-top:5px;
+      margin-right:5px;
+      margin-bottom: 12px;
+  }   
+    
+ label{
+    font-weight:600px;
+    font-size: 16px;
+    
+ }
+ 
+textarea {
+  margin-top: 5px;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+  
+} 
+
+.button{
+      padding:10px;
+      width: 100%;
+      border:none;
+      color:#fff;                                  
+      background-color:#FA5B3D;
+      border-radius: 10px;
+ }
+ 
+ .footer_bottom{
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 15px;
+ }
+
+    </style>
+</head>
+
+<body>
+   <div class="header_top">
+       <h1>Contact Us</h1>
+   <p>have any questions? we'd love to hear from you. Send us a message we'll respond as soon as possible.</p>
+   
+   </div>
+ <form method="POST" action="mail.php" id="contact-form">
+    <div class="container">
+       <div class="form_group">
+      <label for="name"> Name:</label><br>
+        <input type="text" id="name" placeholder="John Doe" name="name" required>
+        <label for="email"> Email:</label><br>   
+         <input type="email" id="email" placeholder="name@example.com" name="email" required>
+         <label for="phone"> Phone:</label><br>
+          <input type="tel" id="phone" placeholder="(000) 000-0000" name="phone" required><br>
+          
+          <label> Message:</label>
+          <br>
+          
+     <textarea name="message" id="message" placeholder="type your message..." required></textarea>
+       <br>
+       <br>
+  
+    <input type="submit" class="button" value="Submit">
+  
+    </div>
+   </div> 
+   </form>
+  </div>
+  
+  <!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+
+    
+<script>
+   const constraints = {
+       name: {
+           presence: { allowEmpty: false }
+       },
+       email: {
+           presence: { allowEmpty: false },
+           email: true
+       },
+       phone: {
+            presence: { allowEmpty: false },
+            phone: true     
+       },
+       message: {
+             presence: { allowEmpty: false }
+         }
+     };
+
+   const form = document.getElementById('contact-form');
+
+   form.addEventListener('submit', function (event) {
+     const formValues = {
+         name: form.elements.name.value,
+         email: form.elements.email.value,
+         phone: form.element.phone.value,
+         message: form.elements.message.value
+     };
+
+     const errors = validate(formValues, constraints);
+
+     if (errors) {
+       event.preventDefault();
+       const errorMessage = Object
+           .values(errors)
+           .map(function (fieldValues) { return fieldValues.join(', ')})
+           .join("\n");
+
+       alert(errorMessage);
+     }
+   }, false);
+</script>
+
+  <!-- footer section --> 
+   <footer>
+       <div class="footer_bottom">
+            <p class="copyright">
+          &copy; Copyright 2023. All Rights Reserved.
+        </p>
+       </div>
+   </footer>
+</body>
+</html>
