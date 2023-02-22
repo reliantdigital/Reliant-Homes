@@ -100,7 +100,7 @@ body{
 }
 
 .input-field input:is(:focus, :valid){
-    border-bottom-color: #4070f4;
+    border-bottom-color: #fa5b3d;
 }
 
 .input-field i{
@@ -113,7 +113,7 @@ body{
 }
 
 .input-field input:is(:focus, :valid) ~ i{
-    color: #4070f4;
+    color: #fa5b3d;
 }
 
 .input-field i.icon{
