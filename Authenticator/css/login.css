@@ -139,7 +139,7 @@ body{
 
 .checkbox-content input{
     margin-right: 10px;
-    accent-color: #4070f4;
+    accent-color: #fa5b3d;
 }
 
 .form .text{
@@ -166,7 +166,7 @@ body{
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 6px;
-    background-color: #4070f4;
+    background-color: #fa5b3d;
     cursor: pointer;
     transition: all 0.3s ease;
 }
