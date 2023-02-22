@@ -26,6 +26,8 @@ body {
 
 .container {
     background-color: #fff;
+    margin-left: 10px;
+    margin-right:10px;
     padding: 1em;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);  
@@ -57,8 +59,9 @@ body {
 }
 
 .form-field input {
-    border: solid 2px #f0f0f0;
-    border-radius: 6px;
+    position: absolute;
+    border-bottom: solid 2px #f0f0f0;
+    border:none
     padding: 10px;
     margin-bottom: 5px;
     font-size: 14px;
