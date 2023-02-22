@@ -60,13 +60,15 @@ body {
 
 .form-field input {
     position: absolute;
-    border-bottom: solid 2px #f0f0f0;
-    border:none
-    padding: 10px;
-    margin-bottom: 5px;
-    font-size: 14px;
-    display: block;
+    height: 100%;
     width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
 }
 
 .form-field input:focus {
@@ -103,7 +105,7 @@ body {
 
 .checkbox-content input{
     margin-right: 10px;
-    accent-color: #4070f4;
+    accent-color: #fa5b3d;
 }
 .checkbox-text{
     display: flex;
@@ -144,6 +146,7 @@ body {
 .form-btn:hover {
     background: #8B4000;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 .form-btn:focus {
