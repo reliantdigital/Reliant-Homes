@@ -75,7 +75,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background-color: #fa5b3d;
+    background-color: #4070f4;
     border-radius: 25px;
 }
 
@@ -100,7 +100,7 @@ body{
 }
 
 .input-field input:is(:focus, :valid){
-    border-bottom-color: #fa5b3d;
+    border-bottom-color: #4070f4;
 }
 
 .input-field i{
@@ -113,7 +113,7 @@ body{
 }
 
 .input-field input:is(:focus, :valid) ~ i{
-    color: #fa5b3d;
+    color: #4070f4;
 }
 
 .input-field i.icon{
@@ -139,7 +139,7 @@ body{
 
 .checkbox-content input{
     margin-right: 10px;
-    accent-color: #fa5b3d;
+    accent-color: #4070f4;
 }
 
 .form .text{
@@ -178,4 +178,15 @@ body{
 .form .login-signup{
     margin-top: 30px;
     text-align: center;
+}
+
+
+/**
+   * FOOTER
+   */
+
+  .footer { --fs-5: 1rem; }
+
+  .footer-link-box { flex-basis: 700px; }
+
 }
