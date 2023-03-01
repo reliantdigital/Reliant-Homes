@@ -1,0 +1,66 @@
+body{
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   display: flex;
+}
+
+.navbar{
+   width: 100%;
+   display: flex;
+   height: 50px;
+   padding: 10px;
+   border: none;
+   background-color: #fff;
+   margin-bottom: 40px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);   
+} 
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #B8B8B8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 10px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+}
+
+.openbtn {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color:none ;
+  color: #111;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
