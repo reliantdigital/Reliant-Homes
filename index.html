@@ -36,7 +36,7 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <title>Reliant - Find your dream house</title>
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
@@ -54,43 +54,11 @@
          <div class="container">
            <ul class="header-top-list">
 
-            <li>
-               <a href="./forms/contact_us.html" class="header-top-link">
-                 <ion-icon name="mail-outline"></ion-icon>
-              <span>Contact Support</span>
-            </a>
-          </li>
-
-          <li>
-          
-
-        <div class="wrapper">
-          <ul class="header-top-social-list">
-
-            <li>
-              <a href="https://facebook.com/reliantdigitals.xyz" class="header-top-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
- 
-          </ul>
-
-      <a href="./Authenticator/login.html">
-   <button class="header-top-btn">Login</button>
-      </a>
+  <p><a href="https://reliantdigitals.xyz" class="logo">
+          <img src="./assets/images/logowhite.png" alt="Reliant logo">
+        </a> </p>  
+   
+     
         </div>
 
       </div>
@@ -99,9 +67,7 @@
     <div class="header-bottom">
       <div class="container">
 
-        <a href="https://reliantdigitals.xyz" class="logo">
-          <img src="./brand/logo.png" alt="Reliant logo">
-        </a>
+        
 
         <nav class="navbar" data-navbar>
 
@@ -129,24 +95,25 @@
               </li>
 
               <li>
-                <a href="application" class="navbar-link" data-nav-link>Submit Application</a>
+                <a href="application" class="navbar-link" data-nav-link> Submit Application</a>
               </li>
 
               <li>
                 <a href="property" class="navbar-link" data-nav-link>Manage Rentals</a>
               </li>
-
-              <li>
-                <a href="blog" class="navbar-link" data-nav-link>Blog</a>
-              </li>
-
-            </ul>
+              </ul>
+              <hr>
+              <br>
+       <a href="https://reliantdigitals.xyz/Authenticator/login.html">
+      <button class="btn" style="border-radius: 7px; width:100%; text-align: center; margin-top 30px;"> Login or Sign up
+      </button>
+      </a>
+       </ul>
           </div>
-
         </nav>
-
+        
         <div class="header-bottom-actions">
-           <a href="https://www.reliantdigitals.xyz/search/search.html">
+           <a href="https://reliantdigitals.xyz/search.html">
           <button class="header-bottom-actions-btn" aria-label="Search">
             <ion-icon name="search-outline"></ion-icon>
                 <span>Search</span>
@@ -161,16 +128,13 @@
 
           <button class="header-bottom-actions-btn" aria-label="Cart">
             <ion-icon name="cart-outline"></ion-icon>
-
-            <span>Cart</span>
+       <span>Cart</span>
           </button>
 
           <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-            <ion-icon name="menu-outline"></ion-icon>
-
-            <span>Menu</span>
-          </button>
-
+  <ion-icon name="menu-outline"> </ion-icon>
+         <span>Menu</span>
+             </button>
         </div>
 
       </div>
@@ -1324,7 +1288,7 @@
             </li>
 
             <li>
-              <a href="./public/about.html" class="footer-link">About us</a>
+              <a href="./src/about.html" class="footer-link">About us</a>
             </li>
 
             <li>
@@ -1337,7 +1301,7 @@
             </li>
             
             <li>
-              <a href="./public/terms-of-use.html" class="footer-link">Terms & Conditions</a>
+              <a href="./src/terms.html" class="footer-link">Terms & Conditions</a>
             </li>
 
             <li>
@@ -1368,32 +1332,7 @@
 
           </ul>
 
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Customer Care</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Login</a>
-            </li>
-
-            
-            <li>
-              <a href="#" class="footer-link">Wish List</a>
-            </li>
-
-
-            <li>
-              <a href="#" class="footer-link">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact us</a>
-            </li>
-
-          </ul>
-
+          
         </div>
 
       </div>
@@ -1422,6 +1361,33 @@
   <!--- ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <!-- Firebase App -->
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDvOg64PKyqPloTaNcaYmx0ycZgv0rcXlM",
+    authDomain: "reliant-digital-1db0a.firebaseapp.com",
+    projectId: "reliant-digital-1db0a",
+    storageBucket: "reliant-digital-1db0a.appspot.com",
+    messagingSenderId: "384852760350",
+    appId: "1:384852760350:web:e806acafb84d594cd35b0f",
+    measurementId: "G-BXKP8T37QD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+
 
 </body>
 
